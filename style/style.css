@@ -4,3 +4,277 @@ body {
     margin: 0;
     padding: 0;
 }
+
+#map {
+    height: 100vh;
+}
+
+
+
+.panel {
+    position: absolute;
+    bottom: 20px;
+    left: 100px;
+    z-index: 30;
+   
+    color: white;
+}
+
+.weather {
+    background-color: black;
+    opacity: 70%;
+    width: 440px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-container {
+    height: 100%;
+    width: 90%;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+.title {
+    position: absolute;
+    z-index: 30;
+    font-size: 80px;
+    top: 100px;
+    left: 100px;
+    font-weight: bold;
+    color: lightgrey;
+    text-transform: uppercase;
+}
+
+.search-container-1 {
+    width: 400px;
+    height: 60px;
+    position: absolute;
+    z-index: 30;
+    top: 180px;
+    left: 100px;
+    background-color: white;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.search-container-2 {
+    width: 400px;
+    height: 60px;
+    position: absolute;
+    z-index: 30;
+    top: 250px;
+    left: 100px;
+    background-color: white;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.search {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.search input {
+    width: 80%;
+    color: grey;
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+}
+
+.search input:focus {
+    color: black;
+    border-bottom: 2px solid black;
+    transition: 0.5s ease-in;
+}
+
+
+
+.search i {
+    font-size: 25px;
+    color: grey;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.search i:hover {
+    color: black;
+    font-size: 30px;
+    transition: 0.2s ease-in;
+}
+
+
+.settings-panel {
+    background-color: black;
+    position: absolute;
+    z-index: 30;
+    opacity: 70%;
+    overflow: hidden;
+    width: 70px;
+    border-radius: 35px;
+    top: 320px;
+    bottom: 100px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.settings {
+    height: 100%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.select-mode {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.settings button {
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 95%;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.readme {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.readme i {
+    font-size: 32px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+
+.stores-list-container {
+    width: 440px;
+    background-color: black;
+    opacity: 70%;
+    position: absolute;
+    z-index: 30;
+    top: 320px;
+    left: 100px;
+    border-radius: 30px;
+    bottom: 100px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.stores-list-container hr {
+    margin: auto;
+    width: 93%;
+    color: white;
+}
+
+.stores-list {
+    overflow-y: scroll;
+    height: 100%;
+}
+
+.store-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.store-info-container {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.store-container:hover {
+    background-color: grey;
+    transition: all 0.2s ease-in-out;
+}
+
+.store-number-container {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    background-color: darkgrey;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.store-number {
+    font-size: 20px;
+}
+
+
+.infoWindow {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.infoWindow hr {
+    width: 97%;
+    color: grey;
+}
+
+.infoWindow h4, h5 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.infoWindow a {
+    text-decoration: none;
+    color: grey;
+    border: none;
+}
+
+.infoWindow a:hover {
+    color: black;
+    transition: 0.3s ease-in;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Trip Advisor</title>
+        <link rel="stylesheet" href="style/style.css">
+        <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+        <script src="js/store-data.js"></script>
+        <script src="js/airports.js"></script>
+     </head>
+    <body>
+
+        <div class="title">Trip Advisor</div>
+        <div class="search-container-1">
+            <div class="search">
+                <input type="text" class="inputValueFrom" placeholder="From:">
+            </div>
+        </div>
+        <div class="search-container-2">
+            <div class="search">
+                <input type="text" class="inputValueTo" placeholder="To:">
+                <i class="fa fa-location-arrow" aria-hidden="true" onclick="gotoMaps()"></i>
+                <i class="fas fa-search-location" id="btn" onclick="displayWeather(), searchAirports()"></i>
+            </div>
+        </div>
+        <div class="stores-list-container">
+            <div class="stores-list">
+                
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="weather">
+                <div class="weather-container">
+                    <div class="weather-area">
+                    </div>
+                    <div class="temp-area">
+                        <span class="temp"></span>
+                    </div>
+                    <div class="temp-description">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="settings-panel">
+            <div class="settings">
+                <div class="readme">
+                    How to use
+                    <i class="fa fa-question" aria-hidden="true" onclick="displayInfo()"></i>
+                </div>
+                <div class="select-mode">
+                    <button type="submit" onclick="enableDarkMode()">Dark Mode</button>
+                    <button type="submit" onclick="enableNormalMode()">Normal Mode</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="map" style="width: 100%;"></div>
+
+
+        <script src="js/index.js"></script>
+        
+        <script src="js/weather.js"></script>
+
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQSNFTex-7OZHksj2T-RTtnJDdWEE4Tw4&callback=initMap">
+        </script>
+    </body>
+</html>
